@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Погода</string>
+
+    <!--    Def_Strings   -->
     <string name="def_weather_text">Облачно</string>
     <string name="def_details">Подробнее</string>
     <string name="def_city">Город</string>
