@@ -6,4 +6,6 @@
     <string name="def_weather_text">Облачно</string>
     <string name="def_details">Подробнее</string>
     <string name="def_city">Город</string>
+
+    <string name="preloader_text">Загрузка...</string>
 </resources>

@@ -4,7 +4,7 @@
     <!--    Def_Strings   -->
     <string name="def_weather_text">Cloudy</string>
     <string name="def_details">Details</string>
-    <string name="def_city">CIty</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="def_city">City</string>
+
+    <string name="preloader_text">Loading...</string>
 </resources>

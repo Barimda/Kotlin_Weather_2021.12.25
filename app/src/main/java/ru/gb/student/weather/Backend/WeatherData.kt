@@ -1,4 +1,6 @@
 package ru.gb.student.weather.Backend
 
-data class WeatherData(val temperature:Double, val lat:Double, val lon:Double)
-//температура, широта, доготоа
+data class WeatherData(val city:CityData = getDefaultCity(), val temperature:Int = 20, val feelsLike:Int = 22)
+data class CityData(val name:String, val lon:Double, val lat:Double)
+
+fun getDefaultCity() = CityData("Moscow", 37.5, 55.5)

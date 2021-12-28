@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".UI.MainActivity">
+    tools:context=".UI.Activity.MainActivity">
+
 
     <FrameLayout
         android:id="@+id/main_frame"
@@ -15,6 +16,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/splash_frame"
+        android:layout_width="@dimen/margin_default_0dp"
+        android:layout_height="@dimen/margin_default_0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
