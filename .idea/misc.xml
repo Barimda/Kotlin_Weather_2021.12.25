@@ -4,10 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/bg_cloudy_gradient.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/bg_fog_gradient.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/bg_rainy_gradient.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/bg_snow_gradient.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/bg_sunny_gradient.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/gradient.xml" value="0.5703125" />
         <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/ic_baseline_cloud_24.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/ic_celsius.xml" value="0.34427083333333336" />
         <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.346875" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/drawable/ic_moon.xml" value="0.34427083333333336" />
         <entry key="..\:/AndroidProjects/Weather/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/layout/fragment_change_city.xml" value="0.32447916666666665" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/layout/fragment_preloader.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/layout/fragment_weather_now.xml" value="0.32135416666666666" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/layout/fragment_weather_on_week.xml" value="0.32135416666666666" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/layout/fragment_weather_today.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/menu/menu_app.xml" value="0.5541666666666667" />
         <entry key="..\:/AndroidProjects/Weather/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.5703125" />
+        <entry key="..\:/AndroidProjects/Weather/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.5661458333333333" />
       </map>
     </option>
   </component>

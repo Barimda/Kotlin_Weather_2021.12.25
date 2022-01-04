@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Погода</string>
+
+    <!--    Def_Strings   -->
+    <string name="def_weather_text">Облачно</string>
+    <string name="def_details">Подробнее</string>
+    <string name="def_city">Город</string>
+
+    <string name="preloader_text">Загрузка...</string>
+    <string name="def_temperature_now">-3°</string>
+    <string name="def_temperature_felt_now">Ощущается как -4°</string>
+    <string name="def_change_a_city">Выбор города</string>
 </resources>
