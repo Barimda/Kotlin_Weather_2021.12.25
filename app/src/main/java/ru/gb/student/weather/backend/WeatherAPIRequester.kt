@@ -1,4 +1,4 @@
-package ru.gb.student.weather.Backend
+package ru.gb.student.weather.backend
 
 class WeatherAPIRequester : WeatherAPI{
     override fun getWeatherFromServer(): WeatherData {

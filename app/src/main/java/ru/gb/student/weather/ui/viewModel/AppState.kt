@@ -1,4 +1,4 @@
-package ru.gb.student.weather.UI.ViewModel
+package ru.gb.student.weather.ui.viewModel
 
 sealed class AppState{
     data class Loading(var progress:Int):AppState()

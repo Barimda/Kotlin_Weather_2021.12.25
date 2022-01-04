@@ -1,4 +1,4 @@
-package ru.gb.student.weather.UI.Fragments
+package ru.gb.student.weather.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

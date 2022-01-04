@@ -8,4 +8,7 @@
     <string name="def_city">Город</string>
 
     <string name="preloader_text">Загрузка...</string>
+    <string name="def_temperature_now">-3°</string>
+    <string name="def_temperature_felt_now">Ощущается как -4°</string>
+    <string name="def_change_a_city">Выбор города</string>
 </resources>

@@ -5,6 +5,11 @@
     <string name="def_weather_text">Cloudy</string>
     <string name="def_details">Details</string>
     <string name="def_city">City</string>
+    <string name="def_temperature_now">-3°</string>
+    <string name="def_temperature_felt_now">Feels like -4°</string>
 
     <string name="preloader_text">Loading...</string>
+    <string name="def_change_a_city">Change a city</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

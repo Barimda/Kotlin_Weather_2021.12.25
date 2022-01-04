@@ -1,4 +1,4 @@
-package ru.gb.student.weather.Backend
+package ru.gb.student.weather.backend
 
 interface WeatherAPI {
     fun getWeatherFromServer():WeatherData

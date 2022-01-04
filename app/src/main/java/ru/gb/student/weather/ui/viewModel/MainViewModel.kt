@@ -1,9 +1,9 @@
-package ru.gb.student.weather.UI.ViewModel
+package ru.gb.student.weather.ui.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import ru.gb.student.weather.Backend.WeatherAPIRequester
+import ru.gb.student.weather.backend.WeatherAPIRequester
 import java.lang.Thread.sleep
 
 class MainViewModel(

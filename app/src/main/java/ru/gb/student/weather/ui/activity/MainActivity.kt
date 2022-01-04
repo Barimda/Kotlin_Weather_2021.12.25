@@ -1,11 +1,11 @@
-package ru.gb.student.weather.UI.Activity
+package ru.gb.student.weather.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Toast
-import ru.gb.student.weather.R
-import ru.gb.student.weather.UI.Fragments.WeatherNowFragment
-import ru.gb.student.weather.UI.ViewModel.AppState
+import ru.gb.student.weather.ui.fragments.WeatherNowFragment
+import ru.gb.student.weather.ui.viewModel.AppState
 import ru.gb.student.weather.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,12 +18,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainUI.root)
 
         if (savedInstanceState == null)
-//            Будет ли следующий код валидным??
-//            supportFragmentManager.beginTransaction().replace(mainUI.mainFrame.id, WeatherNowFragment.newInstance())
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frame, WeatherNowFragment.newInstance())
+            supportFragmentManager.beginTransaction().replace(mainUI.mainFrame.id, WeatherNowFragment.newInstance()).commit()
+//            supportFragmentManager.beginTransaction()
+//                .replace(R.id.main_frame, WeatherNowFragment.newInstance()).commit()
 
     }
+//
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        menuInflater.inflate(mainUI.toolbar.id, menu)
+//        return super.onCreateOptionsMenu(menu)
+//    }
 
     fun renderData(appState: AppState) {
         when (appState) {

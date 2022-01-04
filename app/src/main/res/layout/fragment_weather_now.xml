@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Fragments.WeatherNowFragment">
+    android:background="@drawable/bg_def_gradient"
+    tools:context=".ui.fragments.WeatherNowFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,53 +15,92 @@
             android:id="@+id/imageView"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="16dp"
             android:src="@drawable/cloudy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/city_now" />
 
         <TextView
             android:id="@+id/temperature_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="-45dp"
+            android:text="-4"
             android:textSize="80sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="-4" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/temperature_felt_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/def_temperature_felt_now"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperature_now" />
 
         <TextView
             android:id="@+id/weather_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/def_weather_text"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/temperature_now"
-            tools:text="@string/def_weather_text" />
+            app:layout_constraintTop_toBottomOf="@+id/temperature_felt_now" />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="16sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="8dp"
+            android:src="@android:drawable/ic_dialog_map"
+            app:layout_constraintEnd_toStartOf="@+id/city_now"
+            app:layout_constraintTop_toTopOf="@+id/city_now" />
 
         <TextView
             android:id="@+id/city_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/def_city"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weather_now"
-            tools:text="@string/def_city" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/show_more_now"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="120dp"
-            android:text="@string/def_details"
+        <FrameLayout
+            android:id="@+id/frame_weather_on_the_week"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather_now">
+
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/float_button_change_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/def_change_a_city"
+            android:src="@android:drawable/ic_menu_mapmode"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:focusable="true" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
