@@ -2,11 +2,11 @@ package ru.gb.student.weather.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.widget.Toast
-import ru.gb.student.weather.ui.fragments.WeatherNowFragment
+import com.google.android.material.snackbar.Snackbar
 import ru.gb.student.weather.ui.viewModel.AppState
 import ru.gb.student.weather.databinding.ActivityMainBinding
+import ru.gb.student.weather.ui.fragments.ShowWeatherFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,16 +18,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainUI.root)
 
         if (savedInstanceState == null)
-            supportFragmentManager.beginTransaction().replace(mainUI.mainFrame.id, WeatherNowFragment.newInstance()).commit()
-//            supportFragmentManager.beginTransaction()
-//                .replace(R.id.main_frame, WeatherNowFragment.newInstance()).commit()
+            supportFragmentManager.beginTransaction().replace(mainUI.mainFrame.id, ShowWeatherFragment.newInstance()).commit()
 
+        Snackbar.make(mainUI.mainFrame, "App is Started",Snackbar.LENGTH_LONG).show()
     }
-//
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        menuInflater.inflate(mainUI.toolbar.id, menu)
-//        return super.onCreateOptionsMenu(menu)
-//    }
 
     fun renderData(appState: AppState) {
         when (appState) {

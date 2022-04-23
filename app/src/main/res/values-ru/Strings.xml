@@ -5,10 +5,12 @@
     <!--    Def_Strings   -->
     <string name="def_weather_text">Облачно</string>
     <string name="def_details">Подробнее</string>
-    <string name="def_city">Город</string>
+    <string name="def_city">Барнаул</string>
 
     <string name="preloader_text">Загрузка...</string>
-    <string name="def_temperature_now">-3°</string>
-    <string name="def_temperature_felt_now">Ощущается как -4°</string>
+    <string name="def_temperature_now">-3°C</string>
+    <string name="def_temperature_felt_now">Ощущается как -4°C</string>
     <string name="def_change_a_city">Выбор города</string>
+
+    <string name="weather_on_the_week">Погода на неделю</string>
 </resources>

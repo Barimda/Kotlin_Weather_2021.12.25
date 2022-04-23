@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="@drawable/bg_def_gradient"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/white"
     tools:context=".ui.fragments.WeatherOnWeekFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,8 +19,10 @@
             android:id="@+id/weather_on_the_week_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Weather on the week"
+            android:layout_marginTop="16dp"
+            android:text="@string/weather_on_the_week"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,4 +37,4 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/weather_on_the_week_text"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+</androidx.cardview.widget.CardView>

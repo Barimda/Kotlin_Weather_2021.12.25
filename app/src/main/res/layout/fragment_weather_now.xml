@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_def_gradient"
+    android:layout_height="180dp"
+    android:layout_margin="16sp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:outlineAmbientShadowColor="@color/black"
     tools:context=".ui.fragments.WeatherNowFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,12 +16,11 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/cloudy"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/fog_night"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/city_now" />
 
@@ -26,81 +28,37 @@
             android:id="@+id/temperature_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-45dp"
-            android:text="-4"
-            android:textSize="80sp"
+            android:layout_marginStart="32dp"
+            android:text="@string/def_temperature_now"
+            android:textSize="50sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
 
         <TextView
             android:id="@+id/temperature_felt_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="13dp"
             android:text="@string/def_temperature_felt_now"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/temperature_now"
+            app:layout_constraintStart_toStartOf="@+id/temperature_now"
             app:layout_constraintTop_toBottomOf="@+id/temperature_now" />
-
-        <TextView
-            android:id="@+id/weather_now"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/def_weather_text"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/temperature_felt_now" />
-
-        <ImageView
-            android:id="@+id/location_icon"
-            android:layout_width="16sp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-5dp"
-            android:layout_marginEnd="8dp"
-            android:src="@android:drawable/ic_dialog_map"
-            app:layout_constraintEnd_toStartOf="@+id/city_now"
-            app:layout_constraintTop_toTopOf="@+id/city_now" />
 
         <TextView
             android:id="@+id/city_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/def_city"
-            android:textSize="18sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <FrameLayout
-            android:id="@+id/frame_weather_on_the_week"
-            android:layout_width="@dimen/zero"
-            android:layout_height="@dimen/zero"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weather_now">
-
-        </FrameLayout>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/float_button_change_city"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:clickable="true"
-            android:contentDescription="@string/def_change_a_city"
-            android:src="@android:drawable/ic_menu_mapmode"
-            app:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:focusable="true" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+</androidx.cardview.widget.CardView>
